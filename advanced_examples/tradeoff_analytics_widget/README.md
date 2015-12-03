@@ -10,7 +10,7 @@ The flow to achieve this has three streams:
 ![](images/toff_widget_flow.png)
 
 ### User-interface serving stream
-The stream connected on the `/tofaw` URL will serve a web page containing the TradeOff Analytics Widget HTML and JavaScript initialization code, and for the purpose of the exercise, a ready-made `problem` extracted from a problem object, as can be seen in the `Set Problem` function node. We create a JavaScript object with the 3 mandatory attributes, a `subject` string, a `columns` array describing the characteristics of the entities to consider, and a `options` array which represent the user's options (i.e. choices, as rows in the table) for the given problem:  
+The stream connected on the `/tofaw` URL will serve a web page containing the TradeOff Analytics Widget HTML and JavaScript initialization code, and for the purpose of the exercise, a ready-made `problem` extracted from a problem object, as can be seen in the `Set Problem` function node. We create a JavaScript object with the 3 mandatory attributes, a `subject` string, a `columns` array describing the characteristics of the entities to consider, and a `options` array which represent the user's options (i.e. choices, as rows in the table) for the given problem(complete data is available at ../problem.js):  
 ```javascript
 // This is where we set the dimensions (columns) of the problem to analyze
 // and the raw data (options)
